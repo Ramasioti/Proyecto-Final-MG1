@@ -11,10 +11,18 @@ public class GameManager : MonoBehaviour
 
     public int gunAmmo = 10;
 
-
     public Text healthText;
 
     public int health = 100;
+
+    public Text ammoText2;
+
+    public int gunAmmo2 = 20;
+
+    public Text ammoText3;
+
+    public int gunAmmo3 = 35;
+
 
 
     public Text enemyKillsText;
@@ -31,7 +39,8 @@ public class GameManager : MonoBehaviour
         ammoText.text = gunAmmo.ToString();
         healthText.text = health.ToString();
         enemyKillsText.text = enemyKills.ToString();
-
+        ammoText2.text = gunAmmo2.ToString();
+        ammoText3.text = gunAmmo3.ToString();
 
         if (health <= 0)
         {

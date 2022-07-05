@@ -11,6 +11,8 @@ public class PlayerInteractions : MonoBehaviour
         {
 
             GameManager.Instance.gunAmmo += other.gameObject.GetComponent<AmmoBox>().ammo;
+            GameManager.Instance.gunAmmo2 += other.gameObject.GetComponent<AmmoBox>().ammo2;
+            GameManager.Instance.gunAmmo3 += other.gameObject.GetComponent<AmmoBox>().ammo3;
 
             Destroy(other.gameObject);
 
